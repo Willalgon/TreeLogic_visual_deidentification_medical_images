@@ -1,0 +1,12 @@
+# Ignorar las carpetas de imágenes y etiquetas del dataset
+images/
+labels/
+
+# Ignorar los pesos descargados y entrenados (ocupan gigas)
+*.pt
+runs/
+
+# Ignorar archivos del sistema
+.DS_Store
+__pycache__/
+.streamlit/
