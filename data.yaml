@@ -1,12 +1,5 @@
-```yaml
 train: images/train
 val: images/val
 
 nc: 5
-
-names:
-  0: name
-  1: id
-  2: age
-  3: date
-  4: time
+names: ['name', 'id', 'age', 'date', 'time']
