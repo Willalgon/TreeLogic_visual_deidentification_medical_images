@@ -17,10 +17,11 @@ results = model.train(
     mixup=0.0,
     degrees=10,
     scale=0.5,
-    flips=0.0,
+    fliplr=0.0,  # <--- Corregido: Volteo horizontal desactivado
+    flipud=0.0,  # <--- Corregido: Volteo vertical desactivado
 
     # RUTAS: Forzamos a que guarde en runs/train (tu carpeta)
     project="runs",
     name="train",
-    exist_ok=True  # Sobrescribe la carpeta actual en vez de crear "train2"
+    exist_ok=True
 )
