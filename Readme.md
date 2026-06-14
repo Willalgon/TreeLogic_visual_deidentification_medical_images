@@ -71,3 +71,23 @@ Este dataset está diseñado para:
 * El dataset está orientado a tareas de detección de objetos y anonimización automática.
 * El conjunto de datos esta formado por imágenes reales y datos sintéticos, permitiendo conservar la privacidad y anonimización de los pacientes.
 
+## Aplicación Web
+
+Incluimos una interfaz gráfica interactiva que permite cargar radiografías, pasarlas por YOLO entrenado y descargar la imagen procesada.
+
+### Características
+* **Carga en caché:** El modelo YOLO se aloja en memoria mediante `@st.cache_resource`.
+* **Formatos soportados:** `.png`, `.jpg` y `.jpeg`.
+* **Tres técnicas posibles:**
+  1. **Pixelado:** Reduce la resolución de la región y la escala de nuevo usando interpolación de vecinos cercanos.
+  2. **Borroso:** Aplica un filtro Gaussiano destructivo para emborronar la zona.
+  3. **Banda Negra:** Sobrescribe las coordenadas detectadas con un bloque opaco.
+* **Descarga:** Permite exportar el resultado en formato PNG.
+
+### Librerías
+
+Dependencias necesarias:
+
+```bash
+pip install streamlit ultralytics opencv-python numpy Pillow
+
