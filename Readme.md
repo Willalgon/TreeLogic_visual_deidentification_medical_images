@@ -19,6 +19,7 @@ Donde:
 * **y\_center:** coordenada Y del centro de la caja (normalizada entre 0 y 1)
 * **width:** ancho de la caja (normalizado entre 0 y 1)
 * **height:** alto de la caja (normalizado entre 0 y 1)
+
 Ejemplo:
 0 0.512 0.183 0.245 0.052
 
@@ -33,6 +34,7 @@ ID	Clase
 
 
 **Estructura del dataset**
+
     .
     ├── data.yaml
     ├── Readme.md
