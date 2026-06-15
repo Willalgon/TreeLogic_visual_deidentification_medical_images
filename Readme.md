@@ -92,6 +92,8 @@ Se ha seleccionado la variante YOLOv8s (Small). Con aproximadamente 11.2 millone
 
 YOLOv8 opera bajo un paradigma de red totalmente convolucional (FCN) de una sola etapa, dividida en tres:
 
+![Arquitectura YOLOv8](YOLOv8_architecture.png)
+
 #### A. El Backbone (Extracción de Características): Bloques C2f y Flujo Multiescala
 El Backbone es el encargado de transformar los píxeles brutos de la radiografía en mapas de características de alto valor. YOLOv8 utiliza una evolución de la arquitectura CSPDarknet53, cuyo núcleo operativo ha sido rediseñado sustituyendo los antiguos bloques C3 por los nuevos bloques C2f.
 ##### ¿Cómo funciona el bloque C2f?
