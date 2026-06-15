@@ -32,7 +32,6 @@ ID	Clase
 4	time
 
 **Estructura del dataset**
-```text
 .
 ├── data.yaml
 ├── Readme.md
