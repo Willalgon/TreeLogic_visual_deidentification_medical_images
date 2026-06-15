@@ -32,15 +32,16 @@ ID	Clase
 4	time
 
 **Estructura del dataset**
+```text
 .
+├── data.yaml
+├── Readme.md
 ├── images/
 │   ├── train/
 │   └── val/
-├── labels/
-│   ├── train/
-│   └── val/
-├─── Readme
-└── data.yaml
+└── labels/
+    ├── train/
+    └── val/
 images/: contiene las radiografías en formato PNG.
 labels/: contiene las anotaciones YOLO (.txt) correspondientes a cada imagen.
 Cada imagen tiene un fichero .txt asociado con el mismo nombre.
