@@ -2,17 +2,14 @@ from ultralytics import YOLO
 import matplotlib.pyplot as plt
 import cv2, os, random
 
-# ── 1. Cargar el modelo desde tu ruta exacta ────────────
 model = YOLO("runs/train/weights/best.pt")
 
-# ── 2. Métricas sobre validación ────────────────────────
 metrics = model.val(data="data.yaml")
 print(f"mAP@50:     {metrics.box.map50:.3f}")
 print(f"mAP@50-95:  {metrics.box.map:.3f}")
 print(f"Precision:  {metrics.box.mp:.3f}")
 print(f"Recall:     {metrics.box.mr:.3f}")
 
-# ── 3. Visualizar predicciones en imágenes de val ───────
 val_dir = "images/val"
 images  = random.sample(os.listdir(val_dir), min(6, len(os.listdir(val_dir))))
 
