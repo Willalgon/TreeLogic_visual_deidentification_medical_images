@@ -240,3 +240,6 @@ Ejecuta:
 python train.py
 ```
 
+### Uso de la Inteligencia Artificial
+
+Hemos utilizado parcialmente Preplexity para ayudarnos con streamlite, comprender fundamentos matemáticos del uso de YOLO y su arquitectura, y para ayudarnos con problemas durante la implementación ejecución y entrenamientos. 
