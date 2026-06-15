@@ -19,6 +19,7 @@ Donde:
 * **y\_center:** coordenada Y del centro de la caja (normalizada entre 0 y 1)
 * **width:** ancho de la caja (normalizado entre 0 y 1)
 * **height:** alto de la caja (normalizado entre 0 y 1)
+
 Ejemplo:
 0 0.512 0.183 0.245 0.052
 
@@ -31,18 +32,21 @@ ID	Clase
 3	date
 4	time
 
+
 **Estructura del dataset**
-.
-├── images/
-│   ├── train/
-│   └── val/
-├── labels/
-│   ├── train/
-│   └── val/
-├─── Readme
-└── data.yaml
-images/: contiene las radiografías en formato PNG.
-labels/: contiene las anotaciones YOLO (.txt) correspondientes a cada imagen.
+
+    .
+    ├── data.yaml
+    ├── Readme.md
+    ├── images/
+    │   ├── train/
+    │   └── val/
+    └── labels/
+        ├── train/
+        └── val/
+
+* `images/`: contiene las radiografías en formato PNG.
+* `labels/`: contiene las anotaciones YOLO (.txt) correspondientes a cada imagen.
 Cada imagen tiene un fichero .txt asociado con el mismo nombre.
 Ejemplo:
 images/train/ed9c0dfc-ea25b576-0f8cc069-df4cdf14-0cd60eb7.png
