@@ -10,3 +10,13 @@ runs/
 .DS_Store
 __pycache__/
 .streamlit/
+# Ignorar todas las imágenes de estos formatos
+*.png
+*.jpg
+*.jpeg
+*.gif
+
+# Ignorar archivos comprimidos pesados
+*.zip
+*.tar.gz
+*.rar
